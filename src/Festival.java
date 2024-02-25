@@ -18,8 +18,7 @@ public class Festival {
     private final LocalDate fechaInicio;
     private final int duracion;
     private final HashSet<Estilo> estilos;
-    
-    
+
     public Festival(String nombre, String lugar, LocalDate fechaInicio,
                     int duracion, HashSet<Estilo> estilos) {
         this.nombre = nombre;
@@ -27,34 +26,26 @@ public class Festival {
         this.fechaInicio = fechaInicio;
         this.duracion = duracion;
         this.estilos = estilos;
-        
     }
     
     public String getNombre() {
         return nombre;
     }
-    
     public String getLugar() {
         return lugar;
     }
-    
     public LocalDate getFechaInicio() {
         return fechaInicio;
     }
-    
     public int getDuracion() {
         return duracion;
     }
-    
     public HashSet<Estilo> getEstilos() {
         return estilos;
     }
-    
     public void addEstilo(Estilo estilo) {
         this.estilos.add(estilo);
-        
     }
-
     /**
      * devuelve el mes de celebración del festival, como
      * valor enumerado
@@ -62,8 +53,7 @@ public class Festival {
      */
     public Mes getMes() {
         //TODO
-         /**
-           * Tambien podriamos hacerlo con if y elseif, por ejemplo:
+         /** Tambien podriamos hacerlo con if y elseif, por ejemplo:
            * if (valorMes == 1) {
            * return Mes.ENERO;
            * } else if (valorMes == 2) {
@@ -109,8 +99,7 @@ public class Festival {
      */
     public boolean empiezaAntesQue(Festival otro) {
         //TODO
-         /**
-          * El metodo devuelve true si la fechaInicio es anterior ala fecha
+         /** El metodo devuelve true si la fechaInicio es anterior ala fecha
           * proporcionada por el otro festival, por ejemplo:
           * Si el festival base que tenemos comienza el 01/01/2024 y la otra
           * comienza el 02/02/2024, el return sera true */
@@ -124,8 +113,7 @@ public class Festival {
      */
     public boolean empiezaDespuesQue(Festival otro) {
         //TODO
-         /**
-           * El metodo devuelve true si la fechaInicio es posterior ala fecha
+         /** El metodo devuelve true si la fechaInicio es posterior ala fecha
            * proporcionada por el otro festival, por ejemplo:
            * Si el festival base que tenemos comienza el 02/02/2024 y la otra
            * comienza el 01/01/2024, el return sera true */
@@ -137,8 +125,7 @@ public class Festival {
      * @return true si el festival ya ha concluido
      */
     public boolean haConcluido() {
-        /**
-         * LocalDate.now es la fecha del sistema que tenemos en el ordenador
+        /** LocalDate.now es la fecha del sistema que tenemos en el ordenador
          * y plusDays(duracion) añade los dias de duracion del festival
          * por lo tanto fecha fin sera la suma de la fecha inicio mas la duracion
          * del festival, luego decimos que si la fecha actual del sistema, es posterior
@@ -219,12 +206,10 @@ public class Festival {
      *
      */
     public static void main(String[] args) {
-        /**
-         * He cambiado algunas fechas, esta parte habria que hablarla
+        /** He cambiado algunas fechas, esta parte habria que hablarla
          * con el profesor por que los datos dados en el main estan dados del 2022
          * las cambie a 2024 y el mes y dia del gazpatxo rock para que se pueda probar bien
-         * los metodos como en la foto del pdf
-        */
+         * los metodos como en la foto del pdf */
         System.out.println("Probando clase Festival");
         String datosFestival = "Gazpatxo Rock : " +
                 "valencia: 16-03-2024  :1  :rock" +
@@ -247,10 +232,10 @@ public class Festival {
                 ":indie" + ": pop  :rock";
         Festival f4 = FestivalesIO.parsearLinea(datosFestival);
         System.out.println(f4);
-      
-        
+
         System.out.println("\nProbando empiezaAntesQue() empiezaDespuesQue()" +
                 "\n");
+
         if (f1.empiezaAntesQue(f2)) {
             System.out.println(f1.getNombre() + " empieza antes que " + f2.getNombre());
         } else if (f1.empiezaDespuesQue(f2)) {
@@ -266,8 +251,5 @@ public class Festival {
         System.out.println(f1);
         /** He añadido \n para que quede igual que la foto del pdf que se nos ha entregado */
         System.out.println(f1.getNombre() + " ha concluido? " + f1.haConcluido() + "\n");
- 
-        
-        
     }
 }

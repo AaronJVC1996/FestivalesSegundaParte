@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-
 /**
  * La clase contiene méodos estáticos que permiten
  * cargar la agenda de festivales leyendo los datos desde
@@ -118,8 +117,4 @@ public class FestivalesIO {
         }
         return conjuntoEstilos;
     }
-
 }
-    
-
-
