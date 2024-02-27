@@ -147,7 +147,7 @@ public class Festival {
 
             /** El nombre del festival y los estilos musicales separados
              * por unos espacios y luego un salto de linea */
-        sb.append(nombre).append(" ").append(estilos).append("\n");
+        sb.append(nombre).append("\t\t").append(estilos).append("\n");
 
             /** Lugar del festival y puesto en uppercase es decir siempre en mayusculas
             * luego un salto de linea */
