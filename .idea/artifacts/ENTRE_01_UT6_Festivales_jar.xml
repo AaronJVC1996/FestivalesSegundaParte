@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ENTRE-01-UT6-Festivales:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ENTRE_01_UT6_Festivales_jar</output-path>
+    <root id="archive" name="ENTRE-01-UT6-Festivales.jar">
+      <element id="module-output" name="ENTRE-01-UT6-Festivales" />
+    </root>
+  </artifact>
+</component>
