@@ -157,7 +157,8 @@ public class Festival {
          * ya que el formato es de dd MMM. yyyy, la MMM. la descubri probando y hace que aparezcan las
          * tres primeras letras del mes y un punto delante */
         if (duracion == 1){
-        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd MMM. yyyy");
+            //he cambiado el formato a el mes sin el punto, puesto que en el pdf en esta parte sale sin el punto
+        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd MMM yyyy");
         String fechaInicioFest = fechaInicio.format(formatoFecha);
             sb.append(fechaInicioFest).append(" ");
         }
@@ -167,11 +168,13 @@ public class Festival {
             * y luego tambien aparecera la fecha final la cual tendra el formato completo de dia, mes y año
             * tambien le decimos que antes de dar la fecha final, aparezca un guion */
         if (duracion > 1) {
-            DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd MMM.");
+            //he cambiado el formato a el mes sin el punto, puesto que en el pdf en esta parte sale sin el punto
+            DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd MMM");
             String fechaInicioFest = fechaInicio.format(formatoFecha);
             sb.append(fechaInicioFest).append(" ");
             LocalDate fechaFinal = fechaInicio.plusDays(duracion);
-            DateTimeFormatter formatoFecha1 = DateTimeFormatter.ofPattern("dd MMM. yyyy");
+            //he cambiado el formato a el mes sin el punto, puesto que en el pdf en esta parte sale sin el punto
+            DateTimeFormatter formatoFecha1 = DateTimeFormatter.ofPattern("dd MMM yyyy");
             String fechaFinalFest = fechaFinal.format(formatoFecha1);
             sb.append("- ").append(fechaFinalFest).append(" ");
         }
