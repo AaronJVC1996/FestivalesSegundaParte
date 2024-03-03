@@ -1,4 +1,7 @@
 /** @author Aaron Jaffet Vasquez Carrera */
+import festivales.modelo.Festival;
+import festivales.modelo.AgendaFestivales;
+import festivales.modelo.Estilo;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
