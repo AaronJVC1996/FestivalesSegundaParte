@@ -1,8 +1,10 @@
-/** @author Aaron Jaffet Vasquez Carrera */
+package festivales.modelo; /** @author Aaron Jaffet Vasquez Carrera */
+import festivales.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.HashSet;
+
 
 /**
  * Un objeto de esta clase almacena los datos de un
@@ -55,11 +57,11 @@ public class Festival {
         //TODO
          /** Tambien podriamos hacerlo con if y elseif, por ejemplo:
            * if (valorMes == 1) {
-           * return Mes.ENERO;
+           * return festivales.modelo.Mes.ENERO;
            * } else if (valorMes == 2) {
-           * return Mes.FEBRERO;
+           * return festivales.modelo.Mes.FEBRERO;
            * } else if (valorMes == 3) {
-           * return Mes.MARZO; ... ETC hasta el 12
+           * return festivales.modelo.Mes.MARZO; ... ETC hasta el 12
            * y luego un else de default return null */
         int valorMesFest = fechaInicio.getMonthValue();
         switch (valorMesFest) {
@@ -205,7 +207,7 @@ public class Festival {
     }
 
     /**
-     * Código para probar la clase Festival
+     * Código para probar la clase festivales.modelo.Festival
      *
      */
     public static void main(String[] args) {
@@ -213,7 +215,7 @@ public class Festival {
          * con el profesor por que los datos dados en el main estan dados del 2022
          * las cambie a 2024 y el mes y dia del gazpatxo rock para que se pueda probar bien
          * los metodos como en la foto del pdf */
-        System.out.println("Probando clase Festival");
+        System.out.println("Probando clase festivales.modelo.Festival");
         String datosFestival = "Gazpatxo Rock : " +
                 "valencia: 16-03-2024  :1  :rock" +
                 ":punk " +

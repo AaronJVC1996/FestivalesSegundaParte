@@ -1,4 +1,9 @@
-/** @author Aaron Jaffet Vasquez Carrera */
+package festivales.test; /** @author Aaron Jaffet Vasquez Carrera */
+import festivales.io.*;
+import festivales.modelo.AgendaFestivales;
+import festivales.modelo.Estilo;
+import festivales.modelo.Mes;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Map;
@@ -7,7 +12,7 @@ import java.util.TreeSet;
 public class TestAgendaFestivales {
     
     /**
-     * Código para probar la clase AgendaFestivales
+     * Código para probar la clase festivales.modelo.AgendaFestivales
      *
      */
     public static void main(String[] args) {

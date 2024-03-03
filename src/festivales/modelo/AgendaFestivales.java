@@ -1,10 +1,10 @@
-/** @author Aaron Jaffet Vasquez Carrera */
+package festivales.modelo; /** @author Aaron Jaffet Vasquez Carrera */
 import java.util.*;
 /**
  * Esta clase guarda una agenda con los festivales programados
  * en una serie de meses
  * La agenda guardalos festivales en una colección map
- * La clave del map es el mes (un enumerado festivales.modelo.Mes)
+ * La clave del map es el mes (un enumerado festivales.modelo.festivales.modelo.Mes)
  * Cada mes tiene asociados en una colección ArrayList
  * los festivales  de ese mes
  * Solo aparecen los meses que incluyen algún festival
@@ -38,7 +38,7 @@ public class AgendaFestivales {
         // vemos si el mes de ese festival en la agenda no existe, si no existe entonces hara lo siguiente
         if (!agenda.containsKey(mesFesti)) {
             // creara una nueva entrada en la agenda, para aniadir algo en la agenda nececitaremos
-            // un mes como key y un valor o valores de tipo arraylist<Festival>
+            // un mes como key y un valor o valores de tipo arraylist<festivales.modelo.Festival>
             // creamos un arraylist de festivales y metemos el festival que tenemos en el parametro del metodo
             ArrayList<Festival> festisEnMes = new ArrayList<>();
             festisEnMes.add(festival);
