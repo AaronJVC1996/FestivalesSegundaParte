@@ -3,16 +3,12 @@ import java.util.*;
 /**
  * Esta clase guarda una agenda con los festivales programados
  * en una serie de meses
- *
  * La agenda guardalos festivales en una colección map
  * La clave del map es el mes (un enumerado festivales.modelo.Mes)
  * Cada mes tiene asociados en una colección ArrayList
  * los festivales  de ese mes
- *
  * Solo aparecen los meses que incluyen algún festival
- *
  * Las claves se recuperan en orden alfabéico
- *
  */
 public class AgendaFestivales {
         private TreeMap<Mes, ArrayList<Festival>> agenda;
