@@ -1,4 +1,4 @@
-package festivales.io; /** @author Aaron Jaffet Vasquez Carrera */
+package src.festivales.io; /** @author Aaron Jaffet Vasquez Carrera */
 import festivales.modelo.AgendaFestivales;
 import festivales.modelo.Estilo;
 import festivales.modelo.Festival;

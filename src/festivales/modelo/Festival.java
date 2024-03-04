@@ -1,4 +1,4 @@
-package festivales.modelo; /** @author Aaron Jaffet Vasquez Carrera */
+package src.festivales.modelo; /** @author Aaron Jaffet Vasquez Carrera */
 import festivales.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -220,22 +220,22 @@ public class Festival {
                 "valencia: 16-03-2024  :1  :rock" +
                 ":punk " +
                 ": hiphop ";
-        Festival f1 = FestivalesIO.parsearLinea(datosFestival);
+        festivales.modelo.Festival f1 = FestivalesIO.parsearLinea(datosFestival);
         System.out.println(f1);
         
         datosFestival = "black sound fest:badajoz:05-02-2024:  21" +
                 ":rock" + ":  blues";
-        Festival f2 = FestivalesIO.parsearLinea(datosFestival);
+        festivales.modelo.Festival f2 = FestivalesIO.parsearLinea(datosFestival);
         System.out.println(f2);
     
         datosFestival = "guitar bcn:barcelona: 28-01-2024 :  170" +
                 ":indie" + ":pop:fusion";
-        Festival f3 = FestivalesIO.parsearLinea(datosFestival);
+        festivales.modelo.Festival f3 = FestivalesIO.parsearLinea(datosFestival);
         System.out.println(f3);
     
         datosFestival = "  benidorm fest:benidorm:26-01-2024:3" +
                 ":indie" + ": pop  :rock";
-        Festival f4 = FestivalesIO.parsearLinea(datosFestival);
+        festivales.modelo.Festival f4 = FestivalesIO.parsearLinea(datosFestival);
         System.out.println(f4);
 
         System.out.println("\nProbando empiezaAntesQue() empiezaDespuesQue()" +

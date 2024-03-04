@@ -1,4 +1,4 @@
-package festivales.modelo; /** @author Aaron Jaffet Vasquez Carrera */
+package src.festivales.modelo; /** @author Aaron Jaffet Vasquez Carrera */
 import java.util.*;
 /**
  * Esta clase guarda una agenda con los festivales programados

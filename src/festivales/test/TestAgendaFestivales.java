@@ -1,8 +1,6 @@
-package festivales.test; /** @author Aaron Jaffet Vasquez Carrera */
+package src.festivales.test; /** @author Aaron Jaffet Vasquez Carrera */
 import festivales.io.*;
-import festivales.modelo.AgendaFestivales;
-import festivales.modelo.Estilo;
-import festivales.modelo.Mes;
+import festivales.modelo.*;
 
 import java.util.Arrays;
 import java.util.HashSet;
